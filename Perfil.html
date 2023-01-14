@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./CSS/Site.css">
+</head>
+<body>
+    <div id="flex-container-menu">
+            <div id="flex-item-logo"></div>
+            <div id="flex-item-nomeLoja"></div>
+        <div id="flex-item-opcoes">
+            <a href="./Edicao.html" class="flex-subitem-menu"><p>Edição de Produtos</p></a>
+            <a href="./Cadastro.html" class="flex-subitem-menu"><p>Cadastro de Produtos</p></a>
+            <a href="./Listagem.html" class="flex-subitem-menu"><p>Listagem de Produtos</p></a>
+            <a href="./Perfil.html" class="flex-subitem-menu" id="select-perfil"><p>Perfil</p></a>
+        </div> 
+    </div>
+        <main id="flex-container-conteudo">
+                <div id="flex-container-tema">
+                    <p>Perfil</p>
+                </div>
+            <form id="form">
+                <div id="changeLogo" class="inputs-perfil">
+                    <label><p>Mudar logo:</p></label>
+                    <input type="url" placeholder="Insira o URL da imagem" id="inputChangeLogo">
+                    <input type="button" value="Mudar" class="button-perfil" onclick="changeLogo()">
+                </div>
+                <div id="changeName" class="inputs-perfil">
+                    <label><p>Mudar nome:</p></label>
+                    <input type="text" placeholder="Insira o novo nome" id="inputChangeName">
+                    <input type="button" value="Mudar" class="button-perfil" onclick="changeName()">
+                </div>
+                <div id="changeBackground" class="inputs-perfil">
+                    <label><p>Inserir imagem de fundo:</p></label>
+                    <input type="url" placeholder="Insira o url da imagem de background" id="inputChangeBackground">
+                    <input type="button" value="Mudar" class="button-perfil" onclick="changeBackground()">
+                </div>
+            </form>
+        </main>
+        <script src="./Menu.js"></script>
+</body>
+</html>

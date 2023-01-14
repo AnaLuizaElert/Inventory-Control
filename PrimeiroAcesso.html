@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastramento de estoque</title>
+    <link rel="stylesheet" href="./CSS/PrimeiroAcesso.css">
+</head>
+<body>
+    <!--Nesta página será realizado o primeiro acesso, nela o usuário deve cadastrar a sua loja-->
+    <div class="flex-container">
+        <div class="flex-item">   
+            <header>
+                <div>
+                    <h1>Cadastro da loja</h1>
+                    <p>Para iniciar o sistema de estoque de produtos da sua loja,
+                        é necessário que você efetue o cadastro de seu estabelecimento</p>
+                </div>
+            </header>
+            <main>
+                <div class="flex-containers-inputs">
+                    <input type="text" id="nomeLoja" class="flex-item-cadastro" placeholder="Nome da loja" required>
+                    <input type="url"  id="urlLogo" class="flex-item-cadastro" placeholder="URL da imagem da logo" required>
+                    <input type="button" value="Enviar" id="enviarNomeELogo" class="flex-item-cadastro">
+                </div>
+            </main>
+            <footer>
+                <p>Após o cadastro, seu sistema de estoque será criado especialmente a você!</p>
+            </footer>
+        </div> 
+    </div>
+    <script src="./PrimeiroAcesso.js"></script>
+</body>
+</html>

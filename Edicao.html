@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema de Estoque</title>
+        <link rel="stylesheet" href="./CSS/Site.css">
+    </head>
+    <body onload="Listar()">
+        <div id="flex-container-menu">
+                <div id="flex-item-logo"></div>
+                <div id="flex-item-nomeLoja"></div>
+            <div id="flex-item-opcoes">
+                <a href="./Edicao.html" class="flex-subitem-menu" id="select-edicao"><p>Edição de Produtos</p></a>
+                <a href="./Cadastro.html" class="flex-subitem-menu"><p>Cadastro de Produtos</p></a>
+                <a href="./Listagem.html" class="flex-subitem-menu"><p>Listagem de Produtos</p></a>
+                <a href="./Perfil.html" class="flex-subitem-menu"><p>Perfil</p></a>
+            </div> 
+        </div>
+    <main id="flex-container-conteudo">
+        <div id="flex-container-tema">
+            <p>Edição de produtos</p>
+        </div>
+        <div id="flex-container-listar-produtos-edicao">  </div>
+    </main>
+    <div id="dv-modal" class="modal">
+        <div class="modal-conteudo">
+                    <div id="flex-item-filtros">
+                        <label id="flex-subitem-label-categoria">Categoria*<br></label>
+                        <select id="flex-item-categoria">
+                            <option value="categorias">Categoria</option>
+                            <option value="bebidas">Bebidas</option>
+                            <option value="carnes">Carnes</option>
+                            <option value="frios">Frios</option>
+                            <option value="higiene">Higiene</option>
+                            <option value="hortifruti">Hortifruti</option>
+                            <option value="lacticinios">Lacticínios</option>
+                            <option value="limpeza">Limpeza</option>
+                            <option value="matinais">Matinais</option>
+                            <option value="mercearia">Mercearia</option>
+                            <option value="padaria">Padaria</option>
+                            <option value="pet-shop">Pet-shop</option>
+                            <option value="utensilios">Utensilios</option>
+                        </select>
+                    </div>
+                    <div class="flex-subitem-organizacao-edicao">
+                        <label type="text">Nome do produto*</label>
+                        <input type="text" placeholder="Nome do produto" id="nome" required>
+                    </div>
+                    <div class="flex-subitem-organizacao-edicao">
+                        <label>URL da imagem do produto</label>
+                        <input type="url" placeholder="URL de imagem" id="url">
+                    </div>
+                    <div class="flex-subitem-organizacao-edicao">
+                        <label>Quantidade deste produto em estoque*</label>
+                        <input type="number" placeholder="Quantidade em estoque" id="qtdProduto" required>
+                    </div>
+                    <div class="flex-subitem-organizacao-edicao">
+                        <label>Unidade de medida*</label>
+                        <input type="text" placeholder="Unidade de medida" id="unidadeMedida" required>
+                    </div>
+                    <div class="flex-subitem-organizacao-edicao">
+                        <label>Localização do produto*</label>
+                        <input type="text" placeholder="Localização" id="localizacao" required>
+                    </div>
+                    <div class="flex-subitem-organizacao-edicao">
+                        <label>Imagem da localização do produto*</label>
+                        <input type="url" placeholder="Url da imagem de localização" id="localizacaoUrl" required>
+                    </div>
+                    <div class="flex-subitem-organizacao-edicao">
+                        <label>Quantidade de itens por pack fechado*</label>
+                        <input type="number" placeholder="Itens por pack fechado" id="qtdPacket" required>
+                    </div> 
+                    <div class="flex-subitem-organizacao-edicao">
+                        <label>Quantidade de itens em estoque*</label>
+                        <input type="number" placeholder="Quantidade em estoque" id="qtdEstoque" required>
+                    </div>   
+                    <div class="flex-subitem-organizacao-edicao">
+                        <label>Preço unitário*</label>
+                        <input type="number" min="0.00" step="0.01" placeholder="Preço unitário" id="preco" required>
+                    </div>
+                    <div id="colocar-botao"></div>
+        </div>
+    </div>    
+    <script src="./Menu.js"></script>
+    <script src="./Edicao.js"></script>
+</body>
+</html>
